@@ -13,5 +13,6 @@ public interface ClienteRepository extends JpaRepository<Cliente, Long> {
 	// Query method - métodos de consultas
 	
 	List<Cliente> findByNome(String nome);
+	List<Cliente> findByNomeContaining(String nome);
 
 }
